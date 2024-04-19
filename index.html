@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key} -->
+    <!-- 2e3fafb5d267a4ac26bfd4338541bf1e -->
+
+</head>
+
+<body>
+    <div id="card">
+        <div class="container">
+            <h1>Temperature converter App</h1>
+            <div class="input-group">
+                <div class="user-input">
+                    <label for="text">Degrees </label>
+                    <input type="number" placeholder="Enter temperature" id="temperatureInput">
+                </div>
+                <div class="opt">
+                    <label for="text">Type</label>
+                    <select id="unitSelect">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+            </div>
+            <div class="res">
+                <label for="text">Result</label>
+                <div id="result"></div>
+            </div>
+            
+            <button class="btn" onclick="convertTemperature()">Convert</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
